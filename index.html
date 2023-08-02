@@ -9,6 +9,15 @@
 <link rel="stylesheet" type="text/css" href="style/002.css">
 <link rel="stylesheet" type="text/css" href="style/003.css">
 <link rel="stylesheet" type="text/css" href="style/004.css">
+<script type="text/javascript">
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+isIphone = ua.match(/(iPhone\sOS)\s([\d_]+)/),
+isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+ismb = isIphone || ipad || isAndroid;
+if(!ismb)
+{ window.location.href="https://www.baidu.com/search/error.html";}
+</script>
 </head>
 <body oncontextmenu="return false" onselectstart="return false">
   <div id="i_head" class="blue_kit blue_kit_top top_bar_fixed">
